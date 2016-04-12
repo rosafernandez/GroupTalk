@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Grouptalk Login page">
+		<meta name="author" content="DSA">
+
+		<title>Signin</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href="css/signin.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="container">
+			<form class="form-signin" id="form-signin">
+				<h2 class="form-signin-heading">Please sign in</h2>
+				<label for="inputLoginid" class="sr-only">Username</label>
+        		<input type="text" id="inputLoginid" class="form-control" placeholder="Username" required autofocus>
+        		<label for="inputPassword" class="sr-only">Password</label>
+        		<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        		<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+			</form>
+		</div>
+
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="js/api.js"></script>
+		<script src="js/login.js"></script>
+	</body>
+</html>

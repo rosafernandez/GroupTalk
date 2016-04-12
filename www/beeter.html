@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Beeter Login page">
+		<meta name="author" content="DSA">
+
+		<title>Beeter</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href="css/navbar-fixed-top.css" rel="stylesheet">
+		<link href="css/beeter.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Beeter</a>
+            <button type="button" id = 'btnEliminar'>Eliminar</button>
+             <button type="button" id = 'btnOut'>Out</button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a id="aProfile" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a id="aGoToProfile">Profile</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a id="aCloseSession">Close session</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    	<div id="stings">
+    		<div class="row">
+    		<button id="buttonUpdate" type="button" class="btn btn-default center-block">Update</button>
+    		</div>
+	    	<div class="row row-margin">
+	    		<div class="col-sm-8 col-center-block">
+	    			<div id="stings-list" class="list-group">
+	    				<a class="list-group-item">
+	    					<p class="list-group-item-text">Muchos años después</p>
+	    					<h6 class="list-group-item-heading" align="right">Cabecera</h6>	
+	    				</a>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="row">
+	    	<form id="formPrevious">
+    			<button id="buttonPrevious" type="submit" class="btn btn-default center-block">Previous</button>
+    		</form>
+            <form id="formGrupos">
+    			<button id="buttonGrupos" type="submit" class="btn btn-default center-block">Grupos</button>
+    		</form>
+    		</div>
+    	</div>
+    </div> <!-- /container -->
+        <div class="container">
+      <h3 class="panel-title">Get Grupo</h3>
+      <span id="get_grupo_res"></span> <button type="button" class="btn btn-info"
+        id="button_get_grupo">Get Get grupo</button>
+            <button type="button" class="btn btn-info"
+        id="buttoneliminar">Eliminar grupo</button> <span class="input-group-addon">ID grupo</span>
+      <input class="form-control" id="grupoid" type="text"> </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/api.js"></script>
+	<script src="js/beeter.js"></script>
+	</body>
+</html>

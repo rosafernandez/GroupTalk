@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Grouptalk register page">
+		<meta name="author" content="DSA">
+
+		<title>Signin</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href="css/signin.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="container">
+			<form class="form-register" id="form-register">
+				<h2 class="form-signin-heading">Please register</h2>
+				<label for="inputLoginid" class="sr-only">Username</label>
+        		<input type="text" id="inputLoginid" class="form-control" placeholder="Username" required autofocus>
+        		<label for="inputPassword" class="sr-only">Password</label>
+        		<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <label for="inputEmail" class="sr-only">Email</label>
+        		<input type="text" id="inputemail" class="form-control" placeholder="Email" required autofocus>
+        		<label for="inputFullname" class="sr-only">Fullname</label>
+        		<input type="text" id="inputname" class="form-control" placeholder="Fullname" required>
+        		<button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+			</form>
+		</div>
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="js/api.js"></script>
+		<script type= "text/javascript" src="js/register.js"></script>
+	</body>
+</html>
